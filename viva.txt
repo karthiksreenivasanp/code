@@ -1,0 +1,1001 @@
+DEEP LEARNING LAB – VIVA VOCE
+
+1. What is transfer learning?
+
+  Answer: Transfer learning uses knowledge learned by a model on one task or dataset to help solve another related task.
+
+2. What is IQR and how is it used to detect outliers?
+
+  Answer: IQR is Q3 − Q1; values below Q1 − 1.5×IQR or above Q3 + 1.5×IQR are treated as outliers.
+
+3. What does model.fit() do?
+
+  Answer: It trains the model using the supplied training data, labels, epochs, and batch size.
+
+4. What is an LSTM cell state?
+
+  Answer: The cell state is the long-term memory pathway of an LSTM that carries important information through the sequence.
+
+5. Why is shuffle=False important for time-series data?
+
+  Answer: It preserves chronological order so future observations are not mixed with past observations during training.
+
+6. What is CIFAR-10?
+
+  Answer: CIFAR-10 is an image dataset containing 10 classes of 32×32 colour images.
+
+7. What is the purpose of the <START> token in machine translation?
+
+  Answer: It tells the decoder where generation of the target sentence should begin.
+
+8. Why is Softmax used in the final classification layer?
+
+  Answer: Softmax converts output scores into probabilities across multiple classes.
+
+9. What does pad_sequences() do?
+
+  Answer: It pads or truncates sequences so that they have a common length.
+
+10. What is the purpose of preprocess_input() in VGG19?
+
+  Answer: It preprocesses input images in the format expected by the pre-trained VGG19 network.
+
+1. What is a Feed Forward Neural Network?
+
+  Answer: A Feed Forward Neural Network passes information from input to output through successive layers without feedback connections.
+
+2. What is the purpose of pandas.read_csv()?
+
+  Answer: It reads data from a CSV file and loads it into a Pandas DataFrame.
+
+3. Why is Dropout used?
+
+  Answer: Dropout randomly disables some neurons during training to reduce overfitting.
+
+4. What is the IMDb dataset used for?
+
+  Answer: It is used for binary sentiment classification of movie reviews as positive or negative.
+
+5. What is the role of the encoder in an encoder-decoder model?
+
+  Answer: The encoder processes the input sequence and produces a representation or states that are passed to the decoder.
+
+6. What is MaxPooling?
+
+  Answer: MaxPooling downsamples feature maps by selecting the maximum value from each local region.
+
+7. What is Z-score normalization?
+
+  Answer: Z-score normalization transforms a value using (x − mean) / standard deviation.
+
+8. Why does VGG19 require three-channel input?
+
+  Answer: VGG19 was trained on RGB images, so it expects three input channels.
+
+9. What does np.argmax() do?
+
+  Answer: It returns the index of the largest value in an array, commonly used to obtain the predicted class.
+
+10. What is Linear Regression?
+
+  Answer: Linear Regression models the relationship between input features and a continuous target using a linear equation.
+
+1. What is the purpose of an Embedding layer?
+
+  Answer: It converts integer word IDs into dense numerical vectors that represent words.
+
+2. What is an outlier?
+
+  Answer: An outlier is a data value that is unusually far from the typical values in a dataset.
+
+3. What does kernel_regularizer=l2(0.001) mean?
+
+  Answer: It applies L2 regularization to the layer weights with regularization strength λ = 0.001.
+
+4. Why are RNNs suitable for sequential data?
+
+  Answer: RNNs process data step by step while maintaining information from previous time steps.
+
+5. What is the purpose of Flatten()?
+
+  Answer: Flatten converts a multi-dimensional feature map into a one-dimensional vector before a Dense layer.
+
+6. What is the difference between actual and predicted values?
+
+  Answer: Actual values are the true observations, while predicted values are the values produced by the model.
+
+7. What is the purpose of the <END> token?
+
+  Answer: It indicates that the target sentence has reached its end during sequence generation.
+
+8. What is VGG19?
+
+  Answer: VGG19 is a deep convolutional neural network with 19 weight layers, commonly used for image recognition and transfer learning.
+
+9. What does validation_split=0.2 mean?
+
+  Answer: It reserves 20% of the training data for validation during training.
+
+10. What is a DataFrame?
+
+  Answer: A DataFrame is a two-dimensional labelled data structure provided by Pandas.
+
+1. Why is MNIST converted into three channels for VGG19?
+
+  Answer: MNIST is grayscale, while VGG19 expects three-channel RGB input, so the grayscale image is converted or replicated into three channels.
+
+2. What is standardization?
+
+  Answer: Standardization scales data to have approximately zero mean and unit standard deviation.
+
+3. What is a GRU?
+
+  Answer: GRU is a recurrent neural network architecture that uses update and reset gates to manage information.
+
+4. What does Dropout(0.5) mean?
+
+  Answer: Approximately 50% of the eligible neurons are randomly dropped during each training update.
+
+5. What is the purpose of model.evaluate()?
+
+  Answer: It evaluates a trained model on test or evaluation data and returns the specified loss and metrics.
+
+6. What is tokenization?
+
+  Answer: Tokenization converts text into smaller units such as words or subwords and maps them to numerical IDs.
+
+7. Why is chronological order important in NIFTY-50 forecasting?
+
+  Answer: Time-series observations depend on temporal order, so chronological order helps prevent future information from influencing past predictions.
+
+8. What is categorical crossentropy?
+
+  Answer: It is a loss function commonly used for multi-class classification with one-hot encoded targets.
+
+9. What is the role of the decoder LSTM?
+
+  Answer: The decoder generates the target sequence step by step using its input and the encoder states.
+
+10. What is a convolutional filter?
+
+  Answer: A convolutional filter is a small learnable matrix that slides over an image to detect local features.
+
+1. What is one-hot encoding?
+
+  Answer: One-hot encoding represents a class as a vector with one position set to 1 and the others set to 0.
+
+2. What is the purpose of np.percentile()?
+
+  Answer: It calculates a specified percentile of the data, such as Q1 or Q3.
+
+3. Why is LSTM preferred for long-term dependencies?
+
+  Answer: LSTM uses gates and a cell state to retain useful information over longer sequences and reduce vanishing-gradient effects.
+
+4. What is the purpose of include_top=False?
+
+  Answer: It removes the original classification head of the pre-trained VGG19 model so a new task-specific classifier can be added.
+
+5. What is CIFAR-10 image size?
+
+  Answer: Each CIFAR-10 image has dimensions 32×32 pixels with 3 colour channels.
+
+6. What is the purpose of model.predict()?
+
+  Answer: It generates predictions for the supplied input data using the trained model.
+
+7. What is Mean Squared Error?
+
+  Answer: MSE is the average of the squared differences between actual and predicted values.
+
+8. What does return_sequences=True mean?
+
+  Answer: It makes an RNN or LSTM return an output for every time step rather than only the final output.
+
+9. What is ReLU?
+
+  Answer: ReLU is an activation function defined as max(0,x), which introduces non-linearity into neural networks.
+
+10. Why are sentences converted into sequences?
+
+  Answer: Neural networks process numerical inputs, so tokens in sentences must be converted into numerical sequences.
+
+1. What is the difference between Dropout and L2 regularization?
+
+  Answer: Dropout randomly disables neurons during training, while L2 adds a penalty for large weights to the loss function.
+
+2. What is an RNN?
+
+  Answer: An RNN is a neural network designed for sequential data that maintains information from previous time steps.
+
+3. What is the purpose of astype('float32')?
+
+  Answer: It converts the data to 32-bit floating-point format, commonly used for efficient neural-network computation.
+
+4. Why does MNIST have 10 output classes?
+
+  Answer: MNIST contains the ten digit classes from 0 through 9.
+
+5. What are state_h and state_c?
+
+  Answer: They are the hidden state and cell state returned by an LSTM encoder.
+
+6. What is a box plot?
+
+  Answer: A box plot summarizes the distribution of data using quartiles, median, whiskers, and possible outliers.
+
+7. What is the purpose of shuffle=False?
+
+  Answer: It prevents random shuffling and preserves the original order of the data.
+
+8. What is an embedding dimension?
+
+  Answer: It is the number of numerical values used to represent each token in an embedding vector.
+
+9. Why is Adam used as an optimizer?
+
+  Answer: Adam adapts the learning rate for parameters using estimates of first and second moments of gradients.
+
+10. What is transfer learning?
+
+  Answer: Transfer learning reuses knowledge or learned features from a pre-trained model for a new related task.
+
+1. What is the purpose of to_categorical()?
+
+  Answer: It converts integer class labels into one-hot encoded vectors.
+
+2. What is a False Positive?
+
+  Answer: A False Positive occurs when a negative sample is incorrectly predicted as positive.
+
+3. What is the purpose of MaxPooling in CNN?
+
+  Answer: It reduces spatial dimensions and computational cost while retaining strong local features.
+
+4. What is the IMDb vocabulary size used in the experiment?
+
+  Answer: The experiment limits the vocabulary to the 10,000 most relevant or allowed word indices.
+
+5. What is the purpose of the Dense layer in the decoder?
+
+  Answer: It maps decoder hidden representations to probabilities over the target vocabulary.
+
+6. What is L2 regularization?
+
+  Answer: L2 regularization adds a penalty proportional to the squared weights to the training loss.
+
+7. What does model.compile() do?
+
+  Answer: It configures the model with the optimizer, loss function, and evaluation metrics before training.
+
+8. What is feature engineering?
+
+  Answer: Feature engineering creates or transforms input variables to make them more useful for a machine-learning model.
+
+9. What does latent_dim=256 represent?
+
+  Answer: It specifies that the LSTM hidden and cell-state representations use 256 units.
+
+10. Why is VGG19 pre-trained on ImageNet useful?
+
+  Answer: It provides learned visual features from a large image dataset that can be reused for another image-classification task.
+
+1. What is an epoch?
+
+  Answer: An epoch is one complete pass through the training dataset.
+
+2. What is the forget gate in LSTM?
+
+  Answer: The forget gate controls which information from the previous cell state should be discarded.
+
+3. What is the purpose of plt.plot()?
+
+  Answer: It plots data points or curves, commonly used to visualize training results or actual versus predicted values.
+
+4. What is an encoder-decoder architecture?
+
+  Answer: It is a sequence model in which an encoder processes the input and a decoder generates the output sequence.
+
+5. Why are CIFAR-10 pixel values normalized?
+
+  Answer: Normalization scales pixel values to a smaller range, which generally makes neural-network training more stable.
+
+6. What is precision?
+
+  Answer: Precision is the proportion of predicted positive samples that are actually positive.
+
+7. What is the purpose of Conv2D()?
+
+  Answer: Conv2D applies learnable two-dimensional convolution filters to image data.
+
+8. What is the purpose of pad_sequences(sequences, maxlen=500)?
+
+  Answer: It pads or truncates sequences so that each sequence has exactly 500 elements.
+
+9. What is the role of ImageNet weights?
+
+  Answer: They provide parameters learned from ImageNet that can be reused as pre-trained visual features.
+
+10. Why should time-series data generally not be randomly shuffled?
+
+  Answer: Random shuffling can mix future and past observations and lead to unrealistic training or data leakage.
+
+1. What is underfitting?
+
+  Answer: Underfitting occurs when a model is too simple to learn the important patterns in the data.
+
+2. What is a TensorFlow tensor?
+
+  Answer: A tensor is a multi-dimensional numerical data structure used by TensorFlow for computation.
+
+3. Why is sigmoid used for IMDb sentiment classification?
+
+  Answer: Sigmoid produces a value between 0 and 1, suitable for binary sentiment prediction.
+
+4. What is the purpose of the forget gate?
+
+  Answer: It determines how much information from the previous cell state should be retained or discarded.
+
+5. What is the purpose of include_top=False?
+
+  Answer: It removes VGG19's original ImageNet classification layers so a new classifier can be attached.
+
+6. What is the difference between Q1 and Q3?
+
+  Answer: Q1 is the 25th percentile and Q3 is the 75th percentile of the data.
+
+7. What is the purpose of model.predict()?
+
+  Answer: It uses the trained model to generate predictions for new input data.
+
+8. What is the target sequence in machine translation?
+
+  Answer: It is the expected translated sequence that the decoder is trained to generate.
+
+9. What does batch_size=64 mean?
+
+  Answer: The model processes 64 training samples in each batch before updating its weights.
+
+10. What is the purpose of Linear Regression?
+
+  Answer: It predicts a continuous numerical target from one or more input features using a linear relationship.
+
+1. What is a confusion matrix?
+
+  Answer: A confusion matrix summarizes classification results using counts of true and false positive and negative predictions.
+
+2. What does validation_split=0.20 do?
+
+  Answer: It uses 20% of the supplied training data as validation data during model training.
+
+3. Why is Softmax used in the translation decoder?
+
+  Answer: It converts decoder scores into a probability distribution over the target vocabulary.
+
+4. What is a convolutional layer?
+
+  Answer: A convolutional layer applies learnable filters to extract local spatial features from input images.
+
+5. What is the difference between NumPy and Pandas?
+
+  Answer: NumPy focuses on numerical arrays and operations, while Pandas provides labelled tabular data structures and data-analysis tools.
+
+6. What is the purpose of EarlyStopping()?
+
+  Answer: It stops training when a monitored metric, usually validation loss, stops improving according to the chosen settings.
+
+7. What is the purpose of the decoder in machine translation?
+
+  Answer: It generates the translated target sequence from the encoder information and previous decoder inputs.
+
+8. What is a five-number summary?
+
+  Answer: It consists of minimum, Q1, median, Q3, and maximum values.
+
+9. What does kernel_size=(5,5) specify?
+
+  Answer: It specifies that the convolution filter has a height of 5 and a width of 5.
+
+10. What is the purpose of preprocess_input()?
+
+  Answer: It applies the input preprocessing expected by the selected pre-trained network.
+
+1. What is recall?
+
+  Answer: Recall is the proportion of actual positive samples that are correctly identified as positive.
+
+2. Why are MNIST images resized before using VGG19?
+
+  Answer: The images are resized to a spatial size compatible with the VGG19 input used in the experiment.
+
+3. What is the purpose of np.where()?
+
+  Answer: It returns indices or selected values based on a specified condition.
+
+4. What is an LSTM?
+
+  Answer: LSTM is a recurrent neural network architecture designed to learn dependencies over longer sequences using gates and a cell state.
+
+5. What is the purpose of L2 regularization?
+
+  Answer: It discourages large weights by adding the squared weight values to the loss.
+
+6. What is a target variable?
+
+  Answer: The target is the output value that a supervised-learning model is trained to predict.
+
+7. Why are <START> and <END> tokens required?
+
+  Answer: They tell the decoder where target-sequence generation begins and ends.
+
+8. What does SimpleRNN(64) mean?
+
+  Answer: It creates a SimpleRNN layer with 64 recurrent units.
+
+9. What is the purpose of model.evaluate()?
+
+  Answer: It calculates the model's loss and selected metrics on supplied evaluation data.
+
+10. What is a convolutional filter?
+
+  Answer: It is a learnable small matrix used to detect patterns such as edges or textures in an image.
+
+1. What is the difference between mean and median?
+
+  Answer: The mean is the arithmetic average, while the median is the middle value after sorting the data.
+
+2. What is a GRU update gate?
+
+  Answer: The update gate controls how much previous information is retained versus replaced by new information.
+
+3. What is the purpose of Flatten()?
+
+  Answer: It converts multi-dimensional feature maps into a one-dimensional vector.
+
+4. What does epochs=100 mean?
+
+  Answer: The model is allowed to make up to 100 complete passes through the training data.
+
+5. Why is binary_crossentropy used for IMDb?
+
+  Answer: IMDb sentiment classification has two classes, so binary crossentropy is suitable for the binary output.
+
+6. What is VGG19?
+
+  Answer: VGG19 is a deep CNN architecture with 19 weight layers used for image feature extraction and classification.
+
+7. What is the purpose of describe() in Pandas?
+
+  Answer: It provides descriptive statistics such as count, mean, standard deviation, minimum, and percentiles.
+
+8. What is Dropout?
+
+  Answer: Dropout randomly disables a fraction of neurons during training to help reduce overfitting.
+
+9. What is the purpose of plotting actual and predicted NIFTY values?
+
+  Answer: The plot helps visually compare model predictions with the true time-series values.
+
+10. What is the purpose of an encoder LSTM?
+
+  Answer: It reads the input sequence and produces hidden and cell states that summarize the input for the decoder.
+
+1. What is a False Negative?
+
+  Answer: A False Negative occurs when a positive sample is incorrectly predicted as negative.
+
+2. What is the purpose of Embedding()?
+
+  Answer: Embedding maps integer token IDs to dense vectors that can be learned during training.
+
+3. What is IQR?
+
+  Answer: IQR is the interquartile range, calculated as Q3 minus Q1.
+
+4. What does batch_size=2 mean in the translation experiment?
+
+  Answer: Two training samples are processed before one weight update is performed.
+
+5. Why is ReLU used in hidden layers?
+
+  Answer: ReLU introduces non-linearity and helps neural networks learn complex patterns.
+
+6. What is the purpose of model.fit()?
+
+  Answer: It trains the model by updating its parameters using the training data.
+
+7. What is transfer learning?
+
+  Answer: It reuses learned representations from a pre-trained model for a related new task.
+
+8. What is a time-series dataset?
+
+  Answer: It is data collected or arranged according to time, where observations are associated with temporal order.
+
+9. What is the purpose of return_state=True?
+
+  Answer: It makes recurrent layers return their final state information in addition to their output.
+
+10. Why is categorical crossentropy used for multi-class classification?
+
+  Answer: It measures the difference between predicted class probabilities and one-hot encoded class targets.
+
+1. What is feature engineering in time-series forecasting?
+
+  Answer: It involves creating useful input variables from temporal data, such as dates, lag values, or trends.
+
+2. What is the purpose of MaxPooling?
+
+  Answer: MaxPooling reduces feature-map dimensions while retaining the strongest local activation.
+
+3. What does mask_zero=True do?
+
+  Answer: It allows the Embedding layer to treat the zero value as padding that should be ignored by suitable recurrent processing.
+
+4. What is the role of the decoder?
+
+  Answer: The decoder generates the target sequence using its inputs and the information supplied by the encoder.
+
+5. What is Z-score?
+
+  Answer: Z-score measures how many standard deviations a value is away from the mean.
+
+6. What is CIFAR-10?
+
+  Answer: CIFAR-10 is a dataset of 32×32 colour images belonging to 10 classes.
+
+7. What is the purpose of model.compile()?
+
+  Answer: It sets the optimizer, loss function, and metrics needed before model training.
+
+8. Why is VGG19 used for MNIST classification?
+
+  Answer: Its pre-trained convolutional layers can provide useful image features that can be adapted to the MNIST task.
+
+9. What is the purpose of np.argmax(predictions, axis=1)?
+
+  Answer: It selects the class index having the highest predicted probability for each sample.
+
+10. What is an output feature map?
+
+  Answer: It is the collection of activations produced by applying convolution filters to an input.
+
+\1. What is the difference between training accuracy and validation accuracy?
+
+  Answer: Training accuracy is measured on training data, while validation accuracy is measured on held-out validation data during training.
+
+2. What is a Dense layer?
+
+  Answer: A Dense layer connects each neuron in the layer to all outputs of the previous layer.
+
+3. What is the purpose of read_csv()?
+
+  Answer: It reads comma-separated data into a Pandas DataFrame.
+
+4. What is the LSTM input gate?
+
+  Answer: The input gate controls how much new information is added to the cell state.
+
+5. Why is Dropout not normally active during testing?
+
+  Answer: During inference the network uses the full learned model rather than randomly dropping neurons.
+
+6. What is machine translation?
+
+  Answer: Machine translation automatically converts text from one natural language into another.
+
+7. What is the purpose of preprocess_input()?
+
+  Answer: It prepares input images according to the preprocessing convention expected by the pre-trained model.
+
+8. What is a True Positive?
+
+  Answer: A True Positive occurs when a positive sample is correctly predicted as positive.
+
+9. What is the purpose of shuffle=False?
+
+  Answer: It preserves the original sequence order during model training.
+
+10. Why are sequences padded?
+
+  Answer: Padding makes sequences equal in length so they can be processed together in batches.
+
+1. What is the purpose of the Embedding layer in IMDb?
+
+  Answer: It converts word indices into trainable dense vectors representing the words.
+
+2. What is a box plot useful for?
+
+  Answer: It shows the distribution, median, quartiles, spread, and possible outliers of data.
+
+3. What is the difference between RNN and LSTM?
+
+  Answer: LSTM is an enhanced RNN architecture with gates and a cell state that better handles long-term dependencies.
+
+4. What does l2(0.001) indicate?
+
+  Answer: It specifies L2 regularization with a coefficient of 0.001.
+
+5. Why does the final CNN layer have 10 neurons for MNIST?
+
+  Answer: There are ten digit classes, 0 through 9, in MNIST.
+
+6. What is an optimizer?
+
+  Answer: An optimizer updates model parameters to minimize the loss function.
+
+7. What is the purpose of the decoder Dense Softmax layer?
+
+  Answer: It produces a probability distribution over possible target vocabulary tokens at each decoder step.
+
+8. What is the difference between actual and predicted NIFTY values?
+
+  Answer: Actual values are observed market values, while predicted values are generated by the forecasting model.
+
+9. What is ImageNet?
+
+  Answer: ImageNet is a large image dataset used to train and evaluate image-recognition models.
+
+10. What is the purpose of model.predict()?
+
+  Answer: It produces model outputs for given input samples.
+
+1. What is a missing value?
+
+  Answer: A missing value is an observation for which no valid data value is recorded.
+
+2. What is the purpose of validation_split?
+
+  Answer: It reserves a portion of training data for validation during training.
+
+3. What is the LSTM output gate?
+
+  Answer: The output gate controls how much information from the cell state is exposed as the current hidden output.
+
+4. Why are CIFAR-10 images normalized by 255?
+
+  Answer: Dividing pixel values by 255 scales the usual 0–255 pixel range to approximately 0–1.
+
+5. What is the purpose of state_h and state_c?
+
+  Answer: They carry the encoder's hidden and cell-state information to the decoder.
+
+6. What is precision?
+
+  Answer: Precision measures how many predicted positives are actually positive.
+
+7. What is a convolutional kernel?
+
+  Answer: A convolutional kernel is a small trainable matrix used to extract local image features.
+
+8. What is the purpose of include_top=False?
+
+  Answer: It excludes the original VGG19 classifier so a new task-specific output layer can be added.
+
+9. What is a vocabulary in NLP?
+
+  Answer: A vocabulary is the set of tokens or words represented by the language-processing model.
+
+10. What is Linear Regression used for?
+
+  Answer: It is used to model and predict continuous numerical values.
+
+1. What is the purpose of EarlyStopping()?
+
+  Answer: It stops training when the monitored performance stops improving according to the specified patience and criterion.
+
+2. What is the reset gate in GRU?
+
+  Answer: The reset gate controls how much previous hidden information is considered when creating new candidate information.
+
+3. What is standardization?
+
+  Answer: Standardization transforms values using their mean and standard deviation, commonly producing zero mean and unit variance.
+
+4. What is the purpose of Flatten() in CNN?
+
+  Answer: It changes the multi-dimensional convolution output into a one-dimensional vector for Dense layers.
+
+5. Why is Softmax used for multi-class classification?
+
+  Answer: It converts class scores into probabilities whose values sum to one.
+
+6. What is the purpose of pad_sequences()?
+
+  Answer: It pads or truncates variable-length sequences to a specified common length.
+
+7. What is the role of the encoder states?
+
+  Answer: They provide the decoder with information learned from the input sequence.
+
+8. What is the purpose of Pandas?
+
+  Answer: Pandas provides tools and data structures for loading, manipulating, and analyzing tabular data.
+
+9. What is VGG19 pre-trained on?
+
+  Answer: VGG19 is commonly pre-trained on the ImageNet dataset.
+
+10. What is Mean Squared Error?
+
+  Answer: MSE is the mean of squared differences between actual and predicted numerical values.
+
+1. What is overfitting?
+
+  Answer: Overfitting occurs when a model learns the training data too closely and performs poorly on unseen data.
+
+2. What is the purpose of Dense(120) and Dense(84) in the CNN?
+
+  Answer: They are fully connected layers used to further learn and combine extracted features before classification.
+
+3. What is an IMDb sentiment label?
+
+  Answer: It indicates whether a movie review is classified as positive or negative.
+
+4. What does return_sequences=True provide?
+
+  Answer: It returns the recurrent output for every time step in the input sequence.
+
+5. What is the purpose of np.median()?
+
+  Answer: It calculates the middle value of sorted data, or the average of the two middle values when appropriate.
+
+6. Why are encoder states passed to the decoder?
+
+  Answer: They transfer information about the source sequence to the decoder for generating the target sequence.
+
+7. What is the advantage of transfer learning?
+
+  Answer: It can reduce training time and improve performance by reusing features learned from a large dataset.
+
+8. What does shuffle=False ensure?
+
+  Answer: It ensures that the order of observations remains unchanged.
+
+9. What is the purpose of Dropout(0.2)?
+
+  Answer: It randomly drops about 20% of the relevant units during training.
+
+10. What is a validation dataset?
+
+  Answer: It is held-out data used during training to monitor model performance and help tune the model.
+
+1. What is the purpose of NumPy?
+
+  Answer: NumPy provides efficient arrays and numerical operations for scientific and machine-learning tasks.
+
+2. What is the purpose of Softmax in the decoder?
+
+  Answer: It converts decoder output scores into probabilities over the target vocabulary.
+
+3. What is a False Positive?
+
+  Answer: It is a negative sample that the model incorrectly predicts as positive.
+
+4. What is the purpose of Conv2D()?
+
+  Answer: It applies learnable convolution filters to extract spatial features from images.
+
+5. Why is LSTM useful for long sequences?
+
+  Answer: Its gated memory mechanism helps preserve important information over many time steps.
+
+6. What is the difference between IQR and Z-score methods?
+
+  Answer: IQR uses quartiles and spread, while Z-score uses the mean and standard deviation to identify unusual values.
+
+7. What does model.evaluate() return?
+
+  Answer: It returns the loss and the metrics specified during model compilation for the supplied evaluation data.
+
+8. What is the purpose of the <END> token?
+
+  Answer: It tells the decoder that the generated target sequence should stop.
+
+9. What is CIFAR-10?
+
+  Answer: CIFAR-10 contains 60,000 32×32 colour images distributed among 10 classes.
+
+10. What is the purpose of plt.plot()?
+
+  Answer: It creates line plots for visualizing values or trends.
+
+1. What is a GRU?
+
+  Answer: GRU is a gated recurrent neural network that uses update and reset gates.
+
+2. What is the purpose of astype('float32') / 255.0?
+
+  Answer: It converts image data to floating-point values and scales pixel intensities from 0–255 to approximately 0–1.
+
+3. Why is VGG19 called a pre-trained model?
+
+  Answer: Its weights have already been learned from a large dataset, typically ImageNet, before being reused for another task.
+
+4. What is a True Negative?
+
+  Answer: A True Negative occurs when a negative sample is correctly predicted as negative.
+
+5. What is the purpose of categorical_crossentropy?
+
+  Answer: It measures classification loss when the target consists of multiple classes represented as categorical probabilities or one-hot labels.
+
+6. What is a feature in machine learning?
+
+  Answer: A feature is an input variable used by a model to make predictions.
+
+7. What is the purpose of the decoder input?
+
+  Answer: It provides the decoder with the previous target tokens during training so it can learn to predict the next token.
+
+8. What is chronological splitting?
+
+  Answer: It divides time-series data while preserving temporal order, typically using earlier data for training and later data for testing.
+
+9. What is Dropout rate?
+
+  Answer: The Dropout rate is the fraction of units randomly omitted during training.
+
+10. What is the purpose of model.fit()?
+
+  Answer: It trains the model on the provided data for the specified number of epochs and batch size.
+
+1. What is the purpose of np.argmax()?
+
+  Answer: It returns the position of the maximum value, commonly giving the predicted class index.
+
+2. What is an outlier?
+
+  Answer: An outlier is an unusually extreme observation compared with the general pattern of the data.
+
+3. What is the difference between LSTM and GRU?
+
+  Answer: Both use gates for sequence processing, but GRU has a simpler structure and fewer gates than LSTM.
+
+4. Why are MNIST images converted to RGB?
+
+  Answer: VGG19 expects three-channel RGB input, whereas MNIST images are originally single-channel grayscale.
+
+5. What is the purpose of kernel_regularizer?
+
+  Answer: It applies a regularization penalty to the weights of a neural-network layer.
+
+6. What is a DataFrame?
+
+  Answer: A DataFrame is Pandas' labelled two-dimensional table-like data structure.
+
+7. Why is sparse_categorical_crossentropy used in the translation model?
+
+  Answer: It is suitable when target classes are represented by integer token IDs rather than one-hot vectors.
+
+8. What is a confusion matrix?
+
+  Answer: It is a table showing correct and incorrect classification counts such as TP, TN, FP, and FN.
+
+9. What does batch_size control?
+
+  Answer: It determines how many samples are processed before the model performs one weight update.
+
+10. What is the purpose of model.predict()?
+
+  Answer: It uses a trained model to produce predictions for input samples.
+
+1. What is the purpose of to_categorical()?
+
+  Answer: It converts integer class labels into one-hot encoded vectors.
+
+2. What is the forget gate?
+
+  Answer: The forget gate decides which previous cell-state information should be retained or discarded.
+
+3. What is the purpose of MaxPooling2D()?
+
+  Answer: It performs two-dimensional pooling to reduce spatial dimensions of feature maps.
+
+4. What is a target sequence?
+
+  Answer: It is the expected output sequence that the decoder learns to generate.
+
+5. What is the difference between training and testing?
+
+  Answer: Training data is used to learn model parameters, while testing data is used to evaluate performance on unseen samples.
+
+6. What is Z-score normalization?
+
+  Answer: It scales each value according to its distance from the mean measured in standard deviations.
+
+7. What is the purpose of preprocess_input()?
+
+  Answer: It formats and scales input images according to the preprocessing expected by the selected pre-trained network.
+
+8. Why is shuffle=False used in forecasting?
+
+  Answer: It preserves temporal order and helps avoid mixing future observations into earlier training data.
+
+9. What is binary crossentropy?
+
+  Answer: It is a loss function designed for binary classification problems.
+
+10. What is the purpose of the encoder?
+
+  Answer: The encoder reads the input sequence and produces a representation or states for the decoder.
+
+1. What is TensorFlow?
+
+  Answer: TensorFlow is a machine-learning framework used to build and train numerical and deep-learning models.
+
+2. What is the purpose of return_state=True?
+
+  Answer: It makes a recurrent layer return its final hidden and cell states along with its output.
+
+3. What is the purpose of a box plot?
+
+  Answer: It summarizes data distribution using quartiles, median, whiskers, and possible outliers.
+
+4. What is transfer learning?
+
+  Answer: It uses knowledge learned by a pre-trained model to solve a related new task.
+
+5. Why is Softmax used in the output layer?
+
+  Answer: It converts output scores into a probability distribution over multiple classes.
+
+6. What is the purpose of EarlyStopping()?
+
+  Answer: It can stop training when the monitored validation performance no longer improves.
+
+7. What is an LSTM cell state?
+
+  Answer: It is the pathway that carries long-term information through an LSTM sequence.
+
+8. What is the purpose of read_csv()?
+
+  Answer: It loads CSV data into a Pandas DataFrame.
+
+9. What is the role of the decoder LSTM?
+
+  Answer: It generates the target sequence using decoder inputs and information from the encoder.
+
+10. What is regularization?
+
+  Answer: Regularization adds constraints or penalties during training to reduce overfitting.
+
+1. What does the following code do: x_train = x_train.astype('float32') / 255.0?
+
+  Answer: It converts image values to floating point and normalizes the usual 0–255 pixel range to approximately 0–1.
+
+2. What is the purpose of pad_sequences()?
+
+  Answer: It makes variable-length token sequences equal in length by padding or truncating them.
+
+3. What is an outlier?
+
+  Answer: An outlier is an observation that is unusually far from the normal pattern of the data.
+
+4. Why is VGG19 pre-trained on ImageNet useful?
+
+  Answer: It provides learned image features that can be reused instead of training all visual features from scratch.
+
+5. What does Dropout(0.5) mean?
+
+  Answer: It randomly drops approximately half of the relevant units during each training update.
+
+6. What is the role of state_h and state_c in an encoder-decoder model?
+
+  Answer: They carry the encoder's learned hidden and cell-state information into the decoder.
+
+7. Why is shuffle=False important in NIFTY-50 forecasting?
+
+  Answer: It keeps the observations in chronological order and avoids inappropriate random mixing of time-series data.
+
+8. What does np.argmax(predictions, axis=1) return?
+
+  Answer: It returns the class index with the highest predicted probability for each sample.
+
+9. What is the difference between RNN and LSTM?
+
+  Answer: LSTM is a gated RNN designed to handle long-term dependencies more effectively.
+
+10. What is the purpose of the <START> token?
+
+  Answer: It indicates the beginning of the target sequence for the decoder.
